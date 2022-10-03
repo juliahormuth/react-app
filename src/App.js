@@ -3,6 +3,10 @@ import FirstComponent from "./components/FirstComponent";
 import Events from "./components/Events";
 import Pikachu from "./assets/pikachu.png";
 import ManageData from "./components/ManageData";
+import ListRender from "./components/ListRender";
+import ConditionalRender from "./components/ConditionalRender";
+import ShowUserName from "./components/ShowUserName";
+
 import "./App.css";
 
 function App() {
@@ -20,6 +24,9 @@ function App() {
         <img src={Pikachu} alt="Pikachu" />
       </div>
       <ManageData />
+      <ListRender />
+      <ConditionalRender />
+      <ShowUserName name="Julia" />
     </div>
   );
 }
