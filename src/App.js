@@ -7,6 +7,8 @@ import ListRender from "./components/ListRender";
 import ConditionalRender from "./components/ConditionalRender";
 import ShowUserName from "./components/ShowUserName";
 import CarDetails from "./components/CarDetails";
+import Fragment from "./components/Fragment";
+import Container from "./components/Container";
 
 import "./App.css";
 
@@ -49,6 +51,11 @@ function App() {
           newCar={car.newCar}
         />
       ))}
+      {/*Fragments: sem elemento pai */}
+      <Fragment propFragment="teste" />
+      <Container myValue="testing">
+        <p>E este é o conteúdo do container</p>
+      </Container>
     </div>
   );
 }
